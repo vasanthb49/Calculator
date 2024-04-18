@@ -1,34 +1,40 @@
+.calculator {
+    margin: 20px auto;
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 400px; /* Set a maximum width to prevent it from becoming too wide on large screens */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
 
-    .calculator {
-        margin: 20px auto;
-        width: 300px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        text-align: center;
-        color: white;
-    }
-    .result {
-        margin-bottom: 10px;
-        padding: 5px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-    .buttons {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 5px;
-    }
-    .button {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        cursor: pointer;
-        color: white;
-    }
+.result {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-    .container {
-        background-color: black;
-        height: 340px;
-        width: 22%;
-    }
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); /* Responsive grid columns */
+    grid-gap: 5px;
+}
+
+.button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.container {
+    background-color: black;
+    height: 10%;
+    width: 30%;
+    padding: 10px; /* Added padding to container for better spacing */
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
